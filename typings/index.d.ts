@@ -7,12 +7,9 @@ export interface CredentialsObject {
 	privateKey?: string;
 }
 
-export interface VonageInstance {
+export default class Vonage {
 	credentials: CredentialsObject;
 	options: { [key: string]: any };
 
 	constructor(credentials: CredentialsObject, options: { [key: string]: any }): void;
 }
-
-declare const Vonage: VonageInstance;
-export default Vonage;
