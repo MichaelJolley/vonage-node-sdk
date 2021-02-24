@@ -11,5 +11,5 @@ export default class Vonage {
 	credentials: CredentialsObject;
 	options: { [key: string]: any };
 
-	constructor(credentials: CredentialsObject, options: { [key: string]: any }): void;
+	constructor(credentials: CredentialsObject, options?: { [key: string]: any }): void;
 }
